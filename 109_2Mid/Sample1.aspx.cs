@@ -10,5 +10,20 @@ namespace _109_2Mid {
         protected void Page_Load(object sender, EventArgs e) {
 
         }
+
+        protected void rb_Book_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void rb_Play_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void rb_Also_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

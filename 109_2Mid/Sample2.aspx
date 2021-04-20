@@ -23,9 +23,12 @@
                 </asp:DropDownList><br />
                 <asp:Label ID="Label1" runat="server" Text="姓名"></asp:Label>
                 <asp:TextBox ID="tb_Name" runat="server"></asp:TextBox><br />
-                <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label><br />
-                <asp:RadioButton ID="rb_No" runat="server" GroupName="Question" Text="否" Checked="True" AutoPostBack="True" OnCheckedChanged ="RadioButton1_CheckedChanged"/><br />
-                <asp:RadioButton ID="rb_Yes" runat="server" GroupName="Question" Text="是" AutoPostBack="True" OnCheckedChanged="RadioButton2_CheckedChanged" /><br />
+                <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label>
+                <asp:RadioButtonList ID="rbl_Res" runat="server" OnSelectedIndexChanged="rbl_Res_SelectedIndexChanged" AutoPostBack="True">
+                    <asp:ListItem>否</asp:ListItem>
+                    <asp:ListItem>是</asp:ListItem>
+                </asp:RadioButtonList>
+                
                 <asp:TextBox ID="tb_Des" runat="server" Width="400" Visible="False"></asp:TextBox><br />
                 <asp:Button ID="btn_Sub" runat="server" Text="送出" OnClick="btn_Sub_Click" /><br />
                 <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>

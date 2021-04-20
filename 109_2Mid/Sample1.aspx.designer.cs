@@ -69,31 +69,31 @@ namespace _109_2Mid
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// rb_Book 控制項。
+        /// 看書 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rb_Book;
+        protected global::System.Web.UI.WebControls.RadioButton 看書;
 
         /// <summary>
-        /// rb_Play 控制項。
+        /// 打電動 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rb_Play;
+        protected global::System.Web.UI.WebControls.RadioButton 打電動;
 
         /// <summary>
-        /// rb_Also 控制項。
+        /// 其他 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rb_Also;
+        protected global::System.Web.UI.WebControls.RadioButton 其他;
 
         /// <summary>
         /// Label4 控制項。

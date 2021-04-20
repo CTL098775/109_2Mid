@@ -17,9 +17,9 @@
                 <asp:Label ID="Label2" runat="server" Text="密碼" Font-Size="X-Large"></asp:Label>
                 <asp:TextBox ID="tb_Pass" runat="server" Height="15px" TextMode="Password" Width="200px"></asp:TextBox><br />
                 <asp:Label ID="Label3" runat="server" Text="興趣(單選)" Font-Size="X-Large"></asp:Label>
-                <asp:RadioButton ID="rb_Book" runat="server" Text="看書" Font-Size="X-Large" GroupName="rbg_Interest" />
-                <asp:RadioButton ID="rb_Play" runat="server" Text="打電動" Font-Size="X-Large" GroupName="rbg_Interest" />
-                <asp:RadioButton ID="rb_Also" runat="server" Text="其他" Font-Size="X-Large" GroupName="rbg_Interest" /><br />
+                <asp:RadioButton ID="看書" runat="server" Text="看書" Font-Size="X-Large" GroupName="rbg_Interest" OnCheckedChanged ="rb_Book_CheckedChanged"/>
+                <asp:RadioButton ID="打電動" runat="server" Text="打電動" Font-Size="X-Large" GroupName="rbg_Interest" OnCheckedChanged ="rb_Play_CheckedChanged"/>
+                <asp:RadioButton ID="其他" runat="server" Text="其他" Font-Size="X-Large" GroupName="rbg_Interest" OnCheckedChanged ="rb_Also_CheckedChanged"/><br />
                 <asp:Label ID="Label4" runat="server" Text="其他連結" Font-Size="X-Large"></asp:Label>
                  <asp:HyperLink ID="HyperLink1" runat="server" Height="30px" ImageUrl="aws-brands.svg" NavigateUrl="https://aws.amazon.com/tw/" Target="_blank" Width="30px">HyperLink</asp:HyperLink><br />
                 <asp:Button ID="bt_Next" runat="server" Text="送出" Height="30px" Width="80px" PostBackUrl="Sample1Com.aspx" />

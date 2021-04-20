@@ -12,19 +12,12 @@ namespace _109_2Mid {
         }
         protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (rb_No.Checked == true)
-            {
-                tb_Des.Visible = false;
-                tb_Des.Text = "";
-            }
+
         }
 
         protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            if (rb_Yes.Checked == true)
-            {
-                tb_Des.Visible = true;
-            }
+
         }
 
         protected void ddl_Area_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,6 +42,14 @@ namespace _109_2Mid {
         protected void btn_Sub_Click(object sender, EventArgs e)
         {
             lb_Msg.Text = ddl_Area.SelectedValue + "</br>" + ddl_Place.SelectedValue + "</br>" + tb_Name.Text + "</br>" + tb_Des.Text;
+        }
+
+        protected void rbl_Res_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (rbl_Res.SelectedIndex == 0)
+                tb_Des.Visible = false;
+            else
+                tb_Des.Visible = true;
         }
     }
 }
