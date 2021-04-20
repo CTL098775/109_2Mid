@@ -10,6 +10,26 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div><h1>訂貨單</h1></div>
+            <div>
+                <asp:DropDownList ID="ddl_Area" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddl_Area_SelectedIndexChanged">
+                    <asp:ListItem>北區</asp:ListItem>
+                    <asp:ListItem>中區</asp:ListItem>
+                </asp:DropDownList><br />
+                <asp:DropDownList ID="ddl_Place" runat="server">
+                    <asp:ListItem>基隆</asp:ListItem>
+                    <asp:ListItem>台北</asp:ListItem>
+                    <asp:ListItem>新北</asp:ListItem>
+                </asp:DropDownList><br />
+                <asp:Label ID="Label1" runat="server" Text="姓名"></asp:Label>
+                <asp:TextBox ID="tb_Name" runat="server"></asp:TextBox><br />
+                <asp:Label ID="Label2" runat="server" Text="其他"></asp:Label><br />
+                <asp:RadioButton ID="rb_No" runat="server" GroupName="Question" Text="否" Checked="True" AutoPostBack="True" OnCheckedChanged ="RadioButton1_CheckedChanged"/><br />
+                <asp:RadioButton ID="rb_Yes" runat="server" GroupName="Question" Text="是" AutoPostBack="True" OnCheckedChanged="RadioButton2_CheckedChanged" /><br />
+                <asp:TextBox ID="tb_Des" runat="server" Width="400" Visible="False"></asp:TextBox><br />
+                <asp:Button ID="btn_Sub" runat="server" Text="送出" OnClick="btn_Sub_Click" /><br />
+                <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
+            </div>
         </div>
     </form>
 </body>

@@ -22,7 +22,7 @@
                 <asp:RadioButton ID="rb_Also" runat="server" Text="其他" Font-Size="X-Large" GroupName="rbg_Interest" /><br />
                 <asp:Label ID="Label4" runat="server" Text="其他連結" Font-Size="X-Large"></asp:Label>
                  <asp:HyperLink ID="HyperLink1" runat="server" Height="30px" ImageUrl="aws-brands.svg" NavigateUrl="https://aws.amazon.com/tw/" Target="_blank" Width="30px">HyperLink</asp:HyperLink><br />
-                <asp:Button ID="bt_Next" runat="server" Text="送出" Height="30px" Width="80px" />
+                <asp:Button ID="bt_Next" runat="server" Text="送出" Height="30px" Width="80px" PostBackUrl="Sample1Com.aspx" />
             </div>
         </div>
     </form>
